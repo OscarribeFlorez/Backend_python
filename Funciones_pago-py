@@ -1,0 +1,24 @@
+
+"""
+crear una funcion que calciule el pago que va a recicbir un empleado 
+tomando como argumento tasas o pagos por horas y la cantidad de horas que trabajo en el mes 
+considerando que en la semana se trabajan 40 horas 
+las horas extras se pagan a 1.5 mas que las normales 
+
+debe retornar el salario a recivir 
+"""
+def pago_mensual(hor, valhor):
+     if hor<=160: 
+         pago=hor*valhor
+     else:
+        hormen=hor-160
+        pago=160*valhor
+        pago+=hormen*(valhor*1.5)
+     return pago
+
+
+horas=int((input("por favor ingrese la cantidad de horas trabajadas ")))
+valorhora=float(input("por favor ingrese el valor de la hora trabajada "))
+print("_________________________________________________________")
+print("el valor del salario es ", pago_mensual(horas,valorhora))
+print("_________________________________________________________")

@@ -6,3 +6,5 @@ elif numero ==0:
     print("el numero es cero ")
 else:
      print("el numero es positivo")
+
+valor=ra
